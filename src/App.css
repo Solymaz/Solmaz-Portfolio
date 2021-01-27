@@ -1,0 +1,12 @@
+body {
+  margin: 0%;
+}
+.App {
+  display: grid;
+  height: 100vh;
+  grid-template-columns: 5% auto auto;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas:
+    "nav about pic"
+    "nav about pic";
+}
