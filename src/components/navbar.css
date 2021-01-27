@@ -1,7 +1,12 @@
 .navbar {
   grid-area: nav;
   background-color: #b3061a;
+  color: white;
 }
-.logo{
-    width: 100%;
+.logo {
+  width: 100%;
+}
+.icons {
+  display: block;
+  font-size: 30px;
 }
