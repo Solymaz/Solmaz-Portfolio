@@ -1,4 +1,7 @@
 .navbar {
   grid-area: nav;
-  background-color: red;
+  background-color: #b3061a;
+}
+.logo{
+    width: 100%;
 }
