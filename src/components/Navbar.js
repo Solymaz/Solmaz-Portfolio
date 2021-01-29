@@ -1,25 +1,47 @@
 import React from "react";
-import { BiHomeSmile } from "react-icons/bi";
+import { BiHomeHeart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
-import { RiUserSettingsLine } from "react-icons/ri";
-import { IoIosCodeWorking } from "react-icons/io";
-import { RiContactsLine } from "react-icons/ri";
-import { TiSocialLinkedin } from "react-icons/ti";
-import { VscGithubAlt } from "react-icons/vsc";
+import { GoSettings } from "react-icons/go";
+import {
+  IoIosCodeWorking,
+  IoMdNotificationsOutline,
+  IoIosRibbon,
+} from "react-icons/io";
+import { RiLinkedinLine, RiGithubLine } from "react-icons/ri";
 
 import "./navbar.css";
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <img src="logo.jpg" className="logo" />
-      <BiHomeSmile className="icons" />
-      <BsPerson className="icons" />
-      <RiUserSettingsLine className="icons" />
-      <IoIosCodeWorking className="icons" />
-      <RiContactsLine className="icons" />
-      <TiSocialLinkedin className="icons" />
-      <VscGithubAlt className="icons" />
+      <img src="logo.jpg" className="logo" alt="logo" />
+      <div className="information">
+        <a href="#" className="home" rel="index">
+          <BiHomeHeart className="icons" />
+          <span className="icon-title">HOME</span>
+        </a>
+        <a>
+          <BsPerson className="icons" />{" "}
+          <span className="icon-title">ABOUT</span>
+        </a>
+        <a>
+          <GoSettings className="icons" />{" "}
+          <span className="icon-title">SKILLS</span>
+        </a>
+        <a>
+          <IoIosCodeWorking className="icons" />{" "}
+          <span className="icon-title">MY WORK</span>
+        </a>
+        <a>
+          <IoIosRibbon className="icons" />{" "}
+          <span className="icon-title">ACCOMPLISHMENTS</span>
+        </a>
+      </div>
+      <div className="contact">
+        <IoMdNotificationsOutline className="icons" />
+        <RiLinkedinLine className="icons" />
+        <RiGithubLine className="icons" />
+      </div>
     </nav>
   );
 };

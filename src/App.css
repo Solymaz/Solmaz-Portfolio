@@ -1,13 +1,15 @@
 body {
   margin: 0%;
-  background-color: #f6eec9;
+  background-color: #cdd0cb;
 }
 .App {
   display: grid;
   height: 100vh;
-  grid-template-columns: 5% auto auto;
-  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 5% auto auto auto;
+  grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    "nav about pic"
-    "nav about pic";
+    "nav . . pic"
+    "nav . mouseTracker pic"
+    "nav . . pic"
+    "nav . .  pic";
 }

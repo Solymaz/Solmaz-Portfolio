@@ -2,11 +2,42 @@
   grid-area: nav;
   background-color: #b3061a;
   color: white;
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-areas:
+    "logo"
+    "information"
+    "contact";
+  justify-items: center;
+}
+.icon-title {
+  display: none;
+}
+a:hover .icon-title {
+  display: initial;
+  font-size: 12px;
+  width: 30px;
+}
+a:hover .icons {
+  display: none;
 }
 .logo {
+  display: grid;
+  grid-area: logo;
   width: 100%;
 }
-.icons {
-  display: block;
+.information {
+  display: grid;
+  grid-area: information;
   font-size: 30px;
+}
+.contact {
+  display: grid;
+  grid-area: contact;
+  font-size: 20px;
+}
+.home {
+  color: white;
+  text-decoration: none;
 }
