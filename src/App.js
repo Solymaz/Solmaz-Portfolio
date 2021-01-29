@@ -1,12 +1,12 @@
 import React from "react";
-import Navbar from "./components/Navbar";
+import Content from "./components/Content";
 import MouseTracker from "./components/MouseTracker";
 import "./App.css";
 
 function App() {
   return (
     <div className="App">
-      <Navbar />
+      <Content />
       <MouseTracker />
     </div>
   );

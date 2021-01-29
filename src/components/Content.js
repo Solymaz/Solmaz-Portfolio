@@ -9,40 +9,41 @@ import {
 } from "react-icons/io";
 import { RiLinkedinLine, RiGithubLine } from "react-icons/ri";
 
-import "./navbar.css";
+import "./content.css";
 
-const Navbar = () => {
+const Content = () => {
   return (
-    <nav className="navbar">
+    <>
       <img src="logo.jpg" className="logo" alt="logo" />
-      <div className="information">
-        <a href="#" className="home" rel="index">
-          <BiHomeHeart className="icons" />
-          <span className="icon-title">HOME</span>
-        </a>
-        <a>
-          <BsPerson className="icons" />{" "}
-          <span className="icon-title">ABOUT</span>
-        </a>
-        <a>
-          <GoSettings className="icons" />{" "}
-          <span className="icon-title">SKILLS</span>
-        </a>
-        <a>
+
+      <a href="#" className="home" rel="index">
+        <BiHomeHeart className="icons" />
+        <span className="icon-title">HOME</span>
+      </a>
+      <a className="about">
+        <BsPerson className="icons" /> <span className="icon-title">ABOUT</span>
+      </a>
+      <a className="skill">
+        <GoSettings className="icons" />{" "}
+        <span className="icon-title">SKILLS</span>
+      </a>
+      <div className="work-cert">
+        <a className="work">
           <IoIosCodeWorking className="icons" />{" "}
           <span className="icon-title">MY WORK</span>
         </a>
-        <a>
+        <a className="cert">
           <IoIosRibbon className="icons" />{" "}
           <span className="icon-title">ACCOMPLISHMENTS</span>
         </a>
       </div>
+
       <div className="contact">
         <IoMdNotificationsOutline className="icons" />
         <RiLinkedinLine className="icons" />
         <RiGithubLine className="icons" />
       </div>
-    </nav>
+    </>
   );
 };
-export default Navbar;
+export default Content;
