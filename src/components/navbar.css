@@ -11,6 +11,9 @@
     "contact";
   justify-items: center;
 }
+.link {
+  color: white;
+}
 .icon-title {
   display: none;
 }

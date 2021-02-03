@@ -31,9 +31,16 @@ const Navbar = () => {
         </a>
       </div>
       <div className="contact">
-        <HiOutlineMail className="icons" />
-        <RiLinkedinLine className="icons" />
-        <RiGithubLine className="icons" />
+        <HiOutlineMail className="link" />
+        <a
+          href="https://www.linkedin.com/in/solmaz-seyedmousavi/"
+          target="_blank"
+        >
+          <RiLinkedinLine className="link" />
+        </a>
+        <a href="https://github.com/Solymaz/" target="_blank">
+          <RiGithubLine className="link" />
+        </a>
       </div>
     </nav>
   );
