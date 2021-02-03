@@ -4,27 +4,14 @@
   color: white;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 1fr 3fr 1fr;
+  grid-template-rows: 0.6fr 4fr 1fr;
   grid-template-areas:
     "logo"
     "information"
     "contact";
   justify-items: center;
 }
-.link {
-  color: white;
-}
-.icon-title {
-  display: none;
-}
-a:hover .icon-title {
-  display: initial;
-  font-size: 12px;
-  width: 30px;
-}
-a:hover .icons {
-  display: none;
-}
+
 .logo {
   display: grid;
   grid-area: logo;
@@ -32,15 +19,69 @@ a:hover .icons {
 }
 .information {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-area: information;
-  font-size: 30px;
+  place-items: center center;
+  width: 100%;
 }
 .contact {
   display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-columns: 1fr;
   grid-area: contact;
   font-size: 20px;
+  place-items: center center;
 }
-.home {
+
+.navItem {
+  position: relative;
+  font-size: 30px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItem:after {
+  content: "";
+  opacity: 0;
+  font-size: 12px;
+  position: absolute;
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.navItem:hover:nth-child(n + 0):nth-child(-n + 4) svg {
+  opacity: 0;
+  transition: all 250ms ease-out;
+}
+.navItem:hover:nth-child(n + 0):nth-child(-n + 4):after {
+  opacity: 1;
+  transition: all 250ms ease-in;
+}
+.navItem:hover:nth-child(1):after {
+  content: "HOME";
+}
+
+.navItem:hover:nth-child(2):after {
+  content: "ABOUT";
+}
+
+.navItem:hover:nth-child(3):after {
+  content: "SKILLS";
+}
+
+.navItem:hover:nth-child(4):after {
+  content: "PROJECTS";
+}
+.link {
   color: white;
   text-decoration: none;
+}
+.link:hover {
+  color: gray;
 }

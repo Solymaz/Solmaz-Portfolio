@@ -2,7 +2,7 @@ import React from "react";
 import { BiHomeHeart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { GoSettings } from "react-icons/go";
-import { IoIosCodeWorking, IoIosRibbon } from "react-icons/io";
+import { IoIosCodeWorking } from "react-icons/io";
 import { RiLinkedinLine, RiGithubLine } from "react-icons/ri";
 import { HiOutlineMail } from "react-icons/hi";
 
@@ -13,21 +13,17 @@ const Navbar = () => {
     <nav className="navbar">
       <img src="logo.jpg" className="logo" alt="logo" />
       <div className="information">
-        <a href="#" className="home" rel="index">
-          <BiHomeHeart className="icons" />
-          <span className="icon-title">HOME</span>
+        <a href="#" rel="index" className="navItem">
+          <BiHomeHeart />
         </a>
-        <a>
-          <BsPerson className="icons" />{" "}
-          <span className="icon-title">ABOUT</span>
+        <a href="#" rel="about" className="navItem">
+          <BsPerson />
         </a>
-        <a>
-          <GoSettings className="icons" />{" "}
-          <span className="icon-title">SKILLS</span>
+        <a href="#" rel="skills" className="navItem">
+          <GoSettings />
         </a>
-        <a>
-          <IoIosCodeWorking className="icons" />{" "}
-          <span className="icon-title">WORKS</span>
+        <a href="#" rel="projects" className="navItem">
+          <IoIosCodeWorking />
         </a>
       </div>
       <div className="contact">
