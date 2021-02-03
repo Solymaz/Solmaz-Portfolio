@@ -5,10 +5,11 @@ body {
 .App {
   display: grid;
   height: 100vh;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 5% auto auto auto;
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
-    ". home ."
-    "about eyes skill"
-    ".  work-cert .";
+    "nav . . pic"
+    "nav . mouseTracker pic"
+    "nav . . pic"
+    "nav . .  pic";
 }

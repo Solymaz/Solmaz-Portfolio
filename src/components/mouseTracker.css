@@ -1,5 +1,5 @@
 .mouseTracker {
-  grid-area: eyes;
+  grid-area: mouseTracker;
   display: flex;
   align-items: center;
   justify-content: center;
