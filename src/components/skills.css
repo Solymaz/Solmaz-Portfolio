@@ -1,0 +1,8 @@
+.skills {
+  grid-area: content;
+}
+.skills li {
+  list-style: none;
+  display: inline-block;
+  padding: 30px;
+}

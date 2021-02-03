@@ -11,8 +11,8 @@ const Home = () => {
         I'm <img src="name.jpg" className="name" alt="name" />,
         <br />
         Front-end Developer
-      </div>
       <MouseTracker />
+      </div>
     </>
   );
 };
