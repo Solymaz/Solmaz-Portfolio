@@ -9,7 +9,7 @@ body {
   grid-template-rows: 1fr 1fr 1fr;
   grid-template-areas:
     "nav .  ."
-    "nav homepage mouseTracker"
+    "nav content mouseTracker"
     "nav  . ."
     "nav  .  .";
 }

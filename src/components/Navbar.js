@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { BiHomeHeart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { GoSettings } from "react-icons/go";
@@ -13,18 +14,18 @@ const Navbar = () => {
     <nav className="navbar">
       <img src="logo.jpg" className="logo" alt="logo" />
       <div className="information">
-        <a href="#" rel="index" className="navItem">
+        <Link to="/" className="navItem">
           <BiHomeHeart />
-        </a>
-        <a href="#" rel="about" className="navItem">
+        </Link>
+        <Link to="/about" className="navItem">
           <BsPerson />
-        </a>
-        <a href="#" rel="skills" className="navItem">
+        </Link>
+        <Link to="/skills" className="navItem">
           <GoSettings />
-        </a>
-        <a href="#" rel="projects" className="navItem">
+        </Link>
+        <Link to="/projects" className="navItem">
           <IoIosCodeWorking />
-        </a>
+        </Link>
       </div>
       <div className="contact">
         <HiOutlineMail className="link" />
