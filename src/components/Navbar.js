@@ -2,12 +2,9 @@ import React from "react";
 import { BiHomeHeart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { GoSettings } from "react-icons/go";
-import {
-  IoIosCodeWorking,
-  IoMdNotificationsOutline,
-  IoIosRibbon,
-} from "react-icons/io";
+import { IoIosCodeWorking, IoIosRibbon } from "react-icons/io";
 import { RiLinkedinLine, RiGithubLine } from "react-icons/ri";
+import { HiOutlineMail } from "react-icons/hi";
 
 import "./navbar.css";
 
@@ -30,15 +27,11 @@ const Navbar = () => {
         </a>
         <a>
           <IoIosCodeWorking className="icons" />{" "}
-          <span className="icon-title">MY WORK</span>
-        </a>
-        <a>
-          <IoIosRibbon className="icons" />{" "}
-          <span className="icon-title">ACCOMPLISHMENTS</span>
+          <span className="icon-title">WORKS</span>
         </a>
       </div>
       <div className="contact">
-        <IoMdNotificationsOutline className="icons" />
+        <HiOutlineMail className="icons" />
         <RiLinkedinLine className="icons" />
         <RiGithubLine className="icons" />
       </div>

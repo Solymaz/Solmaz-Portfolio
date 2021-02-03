@@ -1,0 +1,8 @@
+.homepage {
+  grid-area: homepage;
+  margin-left: 50px;
+  font-size: 42px;
+}
+.name {
+  max-width: 70px;
+}
