@@ -1,8 +1,26 @@
 .skills {
   grid-area: content;
+  margin-left: 50px;
 }
+
 .skills li {
   list-style: none;
-  display: inline-block;
-  padding: 30px;
+  line-height: 2rem;
+}
+.settings {
+  width: 50px;
+  display: inline;
+}
+.done {
+  display: inline;
+  width: 30px;
+}
+.loading {
+  width: 30px;
+  height: 100%;
+}
+.skillTable {
+  display: grid;
+  grid-template-columns: 30% 30%;
+  grid-template-rows: repeat(8, 1fr);
 }
