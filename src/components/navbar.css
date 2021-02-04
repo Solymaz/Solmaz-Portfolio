@@ -85,3 +85,6 @@
 .link:hover {
   color: gray;
 }
+.selected {
+  color: gray;
+}
