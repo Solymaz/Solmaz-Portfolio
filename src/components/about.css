@@ -1,5 +1,13 @@
 .about-content {
-  grid-area: content;
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-template-rows: auto;
+  grid-template-areas: "aboutMe .";
+}
+.aboutMe {
+  grid-area: aboutMe;
+  text-align: justify;
   margin-left: 50px;
   font-size: 16px;
+  place-self: center;
 }

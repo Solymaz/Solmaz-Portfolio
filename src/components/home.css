@@ -1,7 +1,19 @@
 .home-content {
   grid-area: content;
-  margin-left: 50px;
   font-size: 42px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "intro eyes";
+}
+.intro {
+  grid-area: intro;
+  align-self: center;
+  margin-left: 50px;
+}
+.eyes {
+  grid-area: eyes;
+  place-self: center;
 }
 .name {
   max-width: 70px;

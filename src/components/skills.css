@@ -6,6 +6,7 @@
 .skills li {
   list-style: none;
   line-height: 2rem;
+  margin-bottom: 20px;
 }
 .settings {
   width: 50px;
