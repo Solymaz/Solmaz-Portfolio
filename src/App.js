@@ -1,10 +1,10 @@
 import React from "react";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-import Navbar from "./components/Navbar";
-import Home from "./components/Home";
-import About from "./components/About";
-import Skills from "./components/Skills";
-import Projects from "./components/Projects";
+import Navbar from "./components/Navbar/Navbar";
+import Home from "./Pages/Home/Home";
+import About from "./Pages/About/About";
+import Skills from "./Pages/Skills/Skills";
+import Projects from "./Pages/Projects/Projects";
 import "./App.css";
 
 function App() {

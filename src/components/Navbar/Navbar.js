@@ -28,7 +28,9 @@ const Navbar = () => {
         </NavLink>
       </div>
       <div className="contact">
-        <HiOutlineMail className="link" />
+        <NavLink to="/contact" activeClassName="selected">
+          <HiOutlineMail className="link" />
+        </NavLink>
         <a
           href="https://www.linkedin.com/in/solmaz-seyedmousavi/"
           target="_blank"

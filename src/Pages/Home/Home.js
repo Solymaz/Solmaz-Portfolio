@@ -1,6 +1,6 @@
 import React from "react";
 import "./home.css";
-import MouseTracker from "./MouseTracker";
+import MouseTracker from "./components/MouseTracker/MouseTracker";
 
 const Home = () => {
   return (

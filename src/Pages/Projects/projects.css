@@ -28,7 +28,7 @@
   transition: all 250ms ease-out;
 }
 .project1-background {
-  background-image: url("./vanillaProject.PNG");
+  background-image: url("../../Assets/images/vanillaProject.PNG");
 }
 .overlay:after {
   content: "";
@@ -85,11 +85,11 @@
   grid-area: project2;
 }
 .project2-background {
-  background-image: url("./toDoApp.PNG");
+  background-image: url("../../Assets/images/toDoApp.PNG");
 }
 .project3 {
   grid-area: project3;
 }
 .project3-background {
-  background-image: url("./reactWeatherApp.PNG");
+  background-image: url("../../Assets/images/reactWeatherApp.PNG");
 }
