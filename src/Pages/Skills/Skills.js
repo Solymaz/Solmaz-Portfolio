@@ -1,9 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../../Style/Animations";
 import "./skills.css";
 
 const Skills = () => {
   return (
-    <div className="skills">
+    <motion.div
+      variants={pageVariants}
+      transition={pageTransition}
+      initial="initial"
+      animate="in"
+      exit="out"
+      className="skills"
+    >
       <h1>Skills</h1>
       <ul className="skillTable">
         <li>HTML 5</li>
@@ -23,7 +32,7 @@ const Skills = () => {
         <li>Redux</li>
         <img src="./loading.gif" className="loading" />
       </ul>
-    </div>
+    </motion.div>
   );
 };
 

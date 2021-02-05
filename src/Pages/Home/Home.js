@@ -1,10 +1,19 @@
 import React from "react";
+import { motion } from "framer-motion";
 import "./home.css";
 import MouseTracker from "./components/MouseTracker/MouseTracker";
+import { pageVariants, pageTransition } from "../../Style/Animations";
 
 const Home = () => {
   return (
-    <div className="home-content">
+    <motion.div
+      variants={pageVariants}
+      transition={pageTransition}
+      initial="initial"
+      animate="in"
+      exit="out"
+      className="home-content"
+    >
       <div className="intro">
         Hi,
         <br />
@@ -15,7 +24,7 @@ const Home = () => {
       <div className="eyes">
         <MouseTracker />
       </div>
-    </div>
+    </motion.div>
   );
 };
 

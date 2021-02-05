@@ -1,5 +1,7 @@
 import React from "react";
 import { useForm } from "react-hook-form";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../../Style/Animations";
 import "./contact.css";
 
 const Contact = () => {
@@ -16,7 +18,14 @@ const Contact = () => {
   };
 
   return (
-    <div className="contactMe">
+    <motion.div
+      variants={pageVariants}
+      transition={pageTransition}
+      initial="initial"
+      animate="in"
+      exit="out"
+      className="contactMe"
+    >
       <div className="text">
         <h1>Contact me</h1>
         <p>
@@ -62,7 +71,7 @@ const Contact = () => {
           className={`submit form-style ${isValid && "active"}`}
         />
       </form>
-    </div>
+    </motion.div>
   );
 };
 

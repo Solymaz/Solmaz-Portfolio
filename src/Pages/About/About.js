@@ -1,9 +1,18 @@
 import React from "react";
+import { motion } from "framer-motion";
+import { pageVariants, pageTransition } from "../../Style/Animations";
 import "./about.css";
 
 const About = () => {
   return (
-    <div className="about-content">
+    <motion.div
+      variants={pageVariants}
+      transition={pageTransition}
+      initial="initial"
+      animate="in"
+      exit="out"
+      className="about-content"
+    >
       <div className="aboutMe">
         <h1>About me</h1>
         <p>
@@ -18,10 +27,10 @@ const About = () => {
           <br /> I have the heart and soul of a developer and all I lack is
           experience. I like to work with different projects that challenge me.
           Currently, I am actively looking for a new opportunity. A chance to
-          exercise and learn more by doing. 
+          exercise and learn more by doing.
         </p>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
