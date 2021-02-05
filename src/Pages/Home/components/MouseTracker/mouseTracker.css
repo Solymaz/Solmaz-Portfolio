@@ -4,7 +4,7 @@
 .eye {
   width: 48px;
   height: 48px;
-  background: #fff;
+  background: lightgray;
   border-radius: 50%;
 }
 .eye-left {
@@ -15,7 +15,6 @@
 }
 .eye-inner {
   position: relative;
-  display: inline-block;
   border-radius: 50%;
   width: 40px;
   height: 40px;
