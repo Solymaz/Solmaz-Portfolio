@@ -20,7 +20,7 @@
 }
 .information {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
   grid-template-columns: 1fr;
   grid-area: information;
   place-items: center center;
@@ -28,7 +28,7 @@
 }
 .contact {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   grid-template-columns: 1fr;
   grid-area: contact;
   font-size: 20px;
@@ -56,11 +56,11 @@
   width: 100%;
 }
 
-.navItem:hover:nth-child(n + 0):nth-child(-n + 4) svg {
+.navItem:hover:nth-child(n + 0):nth-child(-n + 5) svg {
   opacity: 0;
   transition: all 250ms ease-out;
 }
-.navItem:hover:nth-child(n + 0):nth-child(-n + 4):after {
+.navItem:hover:nth-child(n + 0):nth-child(-n + 5):after {
   opacity: 1;
   transition: all 250ms ease-in;
 }
@@ -79,13 +79,14 @@
 .navItem:hover:nth-child(4):after {
   content: "PROJECTS";
 }
+.navItem:hover:nth-child(5):after {
+  content: "CONTACT";
+}
 .link {
   color: white;
   text-decoration: none;
 }
-.link:hover {
-  color: gray;
-}
+.link:hover,
 .selected {
-  color: gray;
+  filter: drop-shadow(0px 0px 4px white);
 }

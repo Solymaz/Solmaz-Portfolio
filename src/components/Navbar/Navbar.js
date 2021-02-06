@@ -26,11 +26,11 @@ const Navbar = () => {
         <NavLink to="/projects" className="navItem" activeClassName="selected">
           <IoIosCodeWorking />
         </NavLink>
-      </div>
-      <div className="contact">
-        <NavLink to="/contact" activeClassName="selected" className="link">
+        <NavLink to="/contact" className="navItem" activeClassName="selected">
           <HiOutlineMail />
         </NavLink>
+      </div>
+      <div className="contact">
         <a
           href="https://www.linkedin.com/in/solmaz-seyedmousavi/"
           target="_blank"

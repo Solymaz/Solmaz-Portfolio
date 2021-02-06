@@ -27,13 +27,13 @@ const Contact = () => {
       className="contactMe"
     >
       <div className="text">
-        <h1>Contact me</h1>
+        <h1>Reach out to me</h1>
         <p>
-          As a junior frontend developer I am intersetd in opportunities that
-          provides me whit the chance to learn and practice modent frontend
-          developemnt by doing. However, please do not hesitate to hit me up if
-          you have any other question. I would also be very happy to know your
-          opinion and get your cponstruvtive feedback about my work.
+          As a junior frontend developer I am interested in opportunities that
+          provides me with the chance of learning modern frontend development by
+          doing. However, please do not hesitate to hit me up if you have any
+          other questions. Constructive feedback on my work is greatly
+          appreciated.
         </p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="form">
