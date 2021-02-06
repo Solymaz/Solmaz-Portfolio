@@ -1,6 +1,17 @@
 import React from "react";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../../Style/Animations";
+import { AiOutlineGithub } from "react-icons/ai";
+import { BsGrid1X2 } from "react-icons/bs";
+import {
+  DiCss3,
+  DiReact,
+  DiBootstrap,
+  DiJavascript,
+  DiHtml5,
+} from "react-icons/di";
+import { SiRedux } from "react-icons/si";
+
 import "./skills.css";
 
 const Skills = () => {
@@ -14,24 +25,40 @@ const Skills = () => {
       className="skills"
     >
       <h1>Skills</h1>
-      <ul className="skillTable">
-        <li>HTML 5</li>
-        <img src="./done.svg" className="done" />
-        <li>CSS 3</li>
-        <img src="./done.svg" className="done" />
-        <li>JavaScript (ES6)</li>
-        <img src="./done.svg" className="done" />
-        <li>ReactJS 16 (React hooks)</li>
-        <img src="./done.svg" className="done" />
-        <li>CSS Grid</li>
-        <img src="./done.svg" className="done" />
-        <li>Bootstrap</li>
-        <img src="./done.svg" className="done" />
-        <li>Version control (Github)</li>
-        <img src="./done.svg" className="done" />
-        <li>Redux</li>
-        <img src="./loading.gif" className="loading" />
-      </ul>
+      <div className="skillTable">
+        <div>
+          <DiHtml5 />
+          <div className="skillName">HTML 5</div>
+        </div>
+        <div>
+          <DiCss3 />
+          <div className="skillName">CSS 3</div>
+        </div>
+        <div>
+          <DiJavascript />
+          <div className="skillName">JavaScript ES6</div>
+        </div>
+        <div>
+          <DiReact />
+          <div className="skillName">ReactJS 16.8</div>
+        </div>
+        <div>
+          <DiBootstrap />
+          <div className="skillName">Bootstrap</div>
+        </div>
+        <div>
+          <AiOutlineGithub />
+          <div className="skillName">GitHub</div>
+        </div>
+        <div>
+          <SiRedux />
+          <div className="skillName">Redux</div>
+        </div>
+        <div>
+          <BsGrid1X2 />
+          <div className="skillName">CSS Grid</div>
+        </div>
+      </div>
     </motion.div>
   );
 };

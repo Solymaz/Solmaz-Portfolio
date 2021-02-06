@@ -1,27 +1,19 @@
 .skills {
   grid-area: content;
   margin-left: 50px;
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  grid-template-rows: 15% auto;
 }
 
-.skills li {
-  list-style: none;
-  line-height: 2rem;
-  margin-bottom: 20px;
-}
-.settings {
-  width: 50px;
-  display: inline;
-}
-.done {
-  display: inline;
-  width: 30px;
-}
-.loading {
-  width: 30px;
-  height: 100%;
-}
 .skillTable {
   display: grid;
-  grid-template-columns: 30% 30%;
-  grid-template-rows: repeat(8, 1fr);
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  font-size: 80px;
+  justify-items: center;
+}
+.skillName {
+  font-size: 14px;
+  text-align: center;
 }
