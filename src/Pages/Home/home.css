@@ -16,19 +16,20 @@
   place-self: center;
 }
 .name {
-  max-width: 70px;
+  max-width: 60px;
+  font-size: 75px;
 }
 .reachMe {
   text-align: center;
 }
 .reachMe a {
   text-decoration: none;
-  color: #b3061a;
+  color: #cdac81;
   font-size: 20px;
   font-weight: bold;
   transition: all 200ms ease-in;
   margin-top: 20px;
 }
 .reachMe a:hover {
-  font-size: 22px;
+  font-size: 23px;
 }

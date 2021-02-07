@@ -64,6 +64,5 @@ input[type="email"] {
   padding-left: 5px;
 }
 .active {
-  background-color: #43658b;
   color: white !important;
 }

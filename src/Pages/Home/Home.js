@@ -18,7 +18,8 @@ const Home = () => {
       <div className="intro">
         Hi,
         <br />
-        I'm <img src="name.jpg" className="name" alt="name" />,
+        I'm <img src="name.jpg" className="name" alt="name" />
+        <span className="name">ol</span>,
         <br />a curious
         <br />
         Front-end Web Developer

@@ -12,7 +12,9 @@ import "./navbar.css";
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <img src="logo.jpg" className="logo" alt="logo" />
+      <NavLink to="/" exact>
+        <img src="logo.jpg" className="logo" alt="logo" />
+      </NavLink>
       <div className="information">
         <NavLink to="/" className="navItem" activeClassName="selected" exact>
           <BiHomeHeart />
