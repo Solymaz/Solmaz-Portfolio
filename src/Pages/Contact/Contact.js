@@ -67,7 +67,7 @@ const Contact = () => {
         <input
           type="submit"
           value="Send"
-          className={`submit form-style ${isValid && "active"}`}
+          className={`submit form-style ${isValid && "active-button"}`}
         />
       </form>
     </motion.div>

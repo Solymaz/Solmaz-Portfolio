@@ -64,6 +64,7 @@ input[type="email"] {
   font-family: "Merienda", cursive;
   padding-left: 5px;
 }
-.active {
+
+.active-button {
   background-color: #cbac84 !important;
 }
