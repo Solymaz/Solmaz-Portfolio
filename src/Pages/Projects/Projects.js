@@ -19,13 +19,21 @@ const projects = () => {
           <div className="project-text">
             Vanilla JS <div> Weather App</div>
           </div>
-          <a href="https://lnkd.in/eYEbyNf" className="view" target="_blank">
+          <a
+            href="https://lnkd.in/eYEbyNf"
+            className="view"
+            target="_blank"
+            rel="noreferrer"
+          >
             View Project
           </a>
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img src="./vanillaProject.PNG" />
+          <img
+            alt="Vanilla JS weather app screenshot"
+            src="./vanillaProject.PNG"
+          />
         </div>
       </div>
       <div className=" project2">
@@ -33,13 +41,18 @@ const projects = () => {
           <div className="project-text">
             React JS <div>Todo List App</div>
           </div>
-          <a href=" https://lnkd.in/eNga-Uh " className="view" target="_blank">
+          <a
+            href=" https://lnkd.in/eNga-Uh "
+            className="view"
+            target="_blank"
+            rel="noreferrer"
+          >
             View Project
           </a>
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img src="./toDoApp.PNG" />
+          <img alt=" ReactJS todo app screenshot" src="./toDoApp.PNG" />
         </div>
       </div>
       <div className=" project3">
@@ -47,13 +60,21 @@ const projects = () => {
           <div className="project-text">
             React JS <div>Weather App</div>
           </div>
-          <a href=" https://lnkd.in/e-wZ3ha " className="view" target="_blank">
+          <a
+            href=" https://lnkd.in/e-wZ3ha "
+            className="view"
+            target="_blank"
+            rel="noreferrer"
+          >
             View Project
           </a>
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img src="./reactWeatherApp.PNG" />
+          <img
+            alt=" ReactJS weather app screenshot"
+            src="./reactWeatherApp.PNG"
+          />
         </div>
       </div>
     </motion.div>

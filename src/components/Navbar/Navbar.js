@@ -36,10 +36,11 @@ const Navbar = () => {
         <a
           href="https://www.linkedin.com/in/solmaz-seyedmousavi/"
           target="_blank"
+          rel="noreferrer"
         >
           <RiLinkedinLine className="link" />
         </a>
-        <a href="https://github.com/Solymaz/" target="_blank">
+        <a href="https://github.com/Solymaz/" target="_blank" rel="noreferrer">
           <RiGithubLine className="link" />
         </a>
       </div>
