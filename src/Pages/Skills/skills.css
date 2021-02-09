@@ -5,7 +5,7 @@
   grid-template-areas:
     "title"
     "skills";
-  height: 100vh;
+  height: calc(100vh - 50px);
 }
 
 .skillTable {
