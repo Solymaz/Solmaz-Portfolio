@@ -14,9 +14,6 @@ jobs:
         uses: actions/setup-node@v1
         with:
           node-version: 15.x
-      - uses: google-github-actions/deploy-appengine@main
-        with:
-          credentials: ${{ secrets.gcp_credentials }}
       - run: npm ci
       - run: npm run build --if-present
       - run: gcloud app deploy
@@ -26,6 +23,6 @@ jobs:
 
     steps:
       - name: Deploy to GCloud
-      - uses: google-github-actions/deploy-appengine@main
+        uses: google-github-actions/deploy-appengine@main
         with:
           credentials: ${{ secrets.gcp_credentials }}
