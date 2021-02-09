@@ -16,7 +16,6 @@ jobs:
           node-version: 15.x
       - run: npm ci
       - run: npm run build --if-present
-      - run: gcloud app deploy
   deploy:
     needs: build
     runs-on: ubuntu-latest
