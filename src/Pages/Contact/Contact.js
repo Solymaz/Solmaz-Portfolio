@@ -1,8 +1,12 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
+import sgMail from "@sendgrid/mail";
 import { pageVariants, pageTransition } from "../../Style/Animations";
 import "./contact.css";
+
+// initializing sendgrid
+sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const Contact = () => {
   const {
@@ -12,9 +16,23 @@ const Contact = () => {
     formState: { isValid },
   } = useForm({ mode: "onChange", reValidateMode: "onChange" });
 
-  const onSubmit = (data) => {
-    console.log(data);
-    reset();
+  const onSubmit = ({ name, email, subject, message }) => {
+    const msg = {
+      to: email,
+      from: "contact@solmaz.dev",
+      subject,
+      text: `${name}: ${message}`,
+    };
+    console.log(msg);
+    sgMail
+      .send(msg)
+      .then(() => {
+        console.log("Email sent");
+        reset();
+      })
+      .catch((error) => {
+        console.error(error);
+      });
   };
 
   return (
@@ -46,7 +64,7 @@ const Contact = () => {
         />
         <input
           type="email"
-          name="Email"
+          name="email"
           placeholder="Email"
           className="email form-style"
           ref={register({ required: true })}
