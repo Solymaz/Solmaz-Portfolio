@@ -28,7 +28,7 @@ const About = () => {
         chance to exercise and learn more by doing.
       </div>
 
-      <img className="photo" src="./sol2.jpg" alt="Sol photo" />
+      <img className="photo" src="./sol2.JPG" alt="Sol photo" />
     </motion.div>
   );
 };
