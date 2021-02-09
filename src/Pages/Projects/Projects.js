@@ -14,48 +14,46 @@ const projects = () => {
       className="projects"
     >
       <h1 className="title">Featured Projects</h1>
-      <div className=" project project1">
-        <div className="overlay project1-background">
-          <div className="project-info">
-            <div className="project-text">
-              Vanilla JS <div> Weather App</div>
-            </div>
-            <a href="https://lnkd.in/eYEbyNf" className="view" target="_blank">
-              View Project
-            </a>
+      <div className=" project1">
+        <div className="project-info">
+          <div className="project-text">
+            Vanilla JS <div> Weather App</div>
           </div>
+          <a href="https://lnkd.in/eYEbyNf" className="view" target="_blank">
+            View Project
+          </a>
+        </div>
+        <div className="overlay" />
+        <div className="image-container">
+          <img src="./vanillaProject.PNG" />
         </div>
       </div>
-      <div className=" project project2">
-        <div className="overlay project2-background">
-          <div className="project-info">
-            <div className="project-text">
-              React JS <div>Todo List App</div>
-            </div>
-            <a
-              href=" https://lnkd.in/eNga-Uh "
-              className="view"
-              target="_blank"
-            >
-              View Project
-            </a>
+      <div className=" project2">
+        <div className="project-info">
+          <div className="project-text">
+            React JS <div>Todo List App</div>
           </div>
+          <a href=" https://lnkd.in/eNga-Uh " className="view" target="_blank">
+            View Project
+          </a>
+        </div>
+        <div className="overlay" />
+        <div className="image-container">
+          <img src="./toDoApp.PNG" />
         </div>
       </div>
-      <div className=" project project3">
-        <div className="overlay project3-background">
-          <div className="project-info">
-            <div className="project-text">
-              React JS <div>Weather App</div>
-            </div>
-            <a
-              href=" https://lnkd.in/e-wZ3ha "
-              className="view"
-              target="_blank"
-            >
-              View Project
-            </a>
+      <div className=" project3">
+        <div className="project-info">
+          <div className="project-text">
+            React JS <div>Weather App</div>
           </div>
+          <a href=" https://lnkd.in/e-wZ3ha " className="view" target="_blank">
+            View Project
+          </a>
+        </div>
+        <div className="overlay" />
+        <div className="image-container">
+          <img src="./reactWeatherApp.PNG" />
         </div>
       </div>
     </motion.div>

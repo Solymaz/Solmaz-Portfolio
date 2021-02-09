@@ -11,3 +11,8 @@ body {
   grid-template-rows: auto;
   grid-template-areas: "nav content ";
 }
+.content {
+  margin-top: 50px;
+  margin-left: 50px;
+  grid-area: content;
+}

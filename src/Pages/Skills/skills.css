@@ -1,19 +1,26 @@
 .skills {
-  grid-area: content;
-  margin-left: 50px;
   display: grid;
-  grid-template-columns: repeat(1fr);
+  grid-template-columns: auto;
   grid-template-rows: 15% auto;
+  grid-template-areas:
+    "title"
+    "skills";
+  height: 100vh;
 }
 
 .skillTable {
+  grid-area: skills;
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  grid-template-rows: 1fr 1fr;
   font-size: 80px;
   justify-items: center;
 }
 .skillName {
   font-size: 14px;
   text-align: center;
+}
+.skills h1 {
+  margin: 0;
+  grid-area: title;
 }

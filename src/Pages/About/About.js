@@ -13,23 +13,22 @@ const About = () => {
       exit="out"
       className="about-content"
     >
+      <h1>About me</h1>
+
       <div className="aboutMe">
-        <h1>About me</h1>
-        <p>
-          I Started learning frontend development not long time ago. Developing
-          is a blend of creativity and logic which is very much me. It is also
-          an incredibly powerful skill that enables me to solve daily life
-          problems. This is what I am striving for. <br />I am a passionate,
-          can-doer, and a detail-oriented person. If you ask my friends and
-          colleagues, they would describe me as an energetic woman with
-          contagious positive energy. <br />
-          When I am not coding, I am most probably either dancing or cooking.
-          <br /> I have the heart and soul of a developer and all I lack is
-          experience. I like to work with different projects that challenge me.
-          Currently, I am actively looking for a new opportunity. A chance to
-          exercise and learn more by doing.
-        </p>
+        Front-end development is a blend of creativity and logic which is very
+        much me. It is also an incredibly powerful skill that enables me to
+        solve daily life problems. This is what fascinates me. <br />I am a
+        passionate, can-doer, and a detail-oriented person. If you ask my
+        friends and colleagues, they would describe me as a fun person to be
+        around, with endless positive energy. <br />
+        When I am not coding, I am most probably dancing while cooking.
+        <br /> I have the heart and soul of a developer and all I lack is
+        experience. Currently, I am actively looking for a new challenge. A
+        chance to exercise and learn more by doing.
       </div>
+
+      <img className="photo" src="./sol2.jpg" alt="Sol photo" />
     </motion.div>
   );
 };

@@ -1,17 +1,18 @@
 .contactMe {
-  grid-area: content;
   display: grid;
   grid-template-columns: 60% 40%;
-  grid-template-rows: 40% 60%;
+  grid-template-rows: 1fr 1.5fr;
   grid-template-areas:
     "text ."
     "form .";
-  margin-left: 50px;
 }
-.text {
+.contactMe-content {
   grid-area: text;
   text-align: justify;
   line-height: 1.5;
+}
+.contactMe-content h1 {
+  margin-top: 0;
 }
 .form {
   grid-area: form;
@@ -64,5 +65,5 @@ input[type="email"] {
   padding-left: 5px;
 }
 .active {
-  color: white !important;
+  background-color: #cbac84 !important;
 }

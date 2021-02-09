@@ -26,7 +26,7 @@ const Contact = () => {
       exit="out"
       className="contactMe"
     >
-      <div className="text">
+      <div className="contactMe-content">
         <h1>Reach out to me</h1>
         <p>
           As a junior frontend developer I am interested in opportunities that
@@ -67,7 +67,6 @@ const Contact = () => {
         <input
           type="submit"
           value="Send"
-          isDirty
           className={`submit form-style ${isValid && "active"}`}
         />
       </form>

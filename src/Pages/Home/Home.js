@@ -16,19 +16,18 @@ const Home = () => {
       className="home-content"
     >
       <div className="intro">
-        Hi,
-        <br />
-        I'm <img src="name.jpg" className="name" alt="name" />
-        <span className="name">ol</span>,
-        <br />a curious
-        <br />
-        Front-end Web Developer
+        Hi, I'm{" "}
+        <div className="S">
+          <div className="eyes">
+            <MouseTracker />
+          </div>
+          <img src="name.jpg" className="name" alt="logo" />
+          <span className="ol">ol</span>
+        </div>
+        a curious Front-end Web Developer
         <div className="reachMe">
           <Link to="/contact">Reach out to me here</Link>
         </div>
-      </div>
-      <div className="eyes">
-        <MouseTracker />
       </div>
     </motion.div>
   );

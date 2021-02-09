@@ -1,7 +1,7 @@
 .navbar {
   grid-area: nav;
-  background-color: #181818;
-  box-shadow: 0px 0px 7px #cae4db;
+  background-color: #070707;
+
   color: #cae4db;
   display: grid;
   grid-template-columns: auto;
@@ -17,7 +17,9 @@
 .logo {
   display: grid;
   grid-area: logo;
-  width: 100%;
+  width: 70%;
+  margin: 0 auto;
+  padding-top: 10px;
 }
 .information {
   display: grid;
