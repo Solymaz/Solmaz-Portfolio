@@ -1,4 +1,4 @@
-import React, { useEffect, useState, useRef } from "react";
+import React, { useState, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import { BiHomeHeart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
