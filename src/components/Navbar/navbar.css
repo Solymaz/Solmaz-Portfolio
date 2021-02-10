@@ -4,13 +4,21 @@
   color: #cae4db;
   display: grid;
   grid-template-columns: auto;
-  grid-template-rows: 0.6fr 4fr 1fr;
+  grid-template-rows: 0.6fr 5fr;
   grid-template-areas:
     "logo"
-    "information"
-    "contact";
+    "menuItems";
   justify-items: center;
   z-index: 10;
+}
+.menuItems {
+  display: grid;
+  grid-area: menuItems;
+  grid-template-columns: auto;
+  grid-template-rows: 4fr 1fr;
+  grid-template-areas:
+    "information"
+    "contact";
 }
 
 .logo {
@@ -40,7 +48,7 @@
 .navItem {
   position: relative;
   font-size: 30px;
-  width: 100%;
+  width: 70px;
   text-decoration: none;
   color: #cae4db;
   display: flex;
@@ -79,7 +87,7 @@
 }
 
 .navItem:hover:nth-child(4):after {
-  content: "PROJECTS";
+  content: "WORK";
 }
 .navItem:hover:nth-child(5):after {
   content: "CONTACT";
@@ -92,38 +100,49 @@
 .selected {
   filter: drop-shadow(0px 0px 4px white);
 }
+.menu {
+  display: none;
+}
 
 @media only screen and (max-width: 600px) {
   .navbar {
     grid-area: nav;
     display: grid;
-    grid-template-rows: 100vw;
-    grid-template-columns: 0.6fr 4fr 1fr;
-    grid-template-areas: "logo information contact";
-    justify-items: center;
+    grid-template-rows: auto;
+    grid-template-columns: 0.6fr 4fr 0.6fr;
+    grid-template-areas: "logo . menu";
+    place-items: center center;
     z-index: 10;
   }
   .logo {
     display: grid;
     grid-area: logo;
-    width: 70%;
-    margin: 0 auto;
-    padding-top: 10px;
+    width: 60%;
+    padding-top: 0;
   }
-  .information {
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-area: information;
-    place-items: center center;
+  .menu {
+    display: block;
+    grid-area: menu;
+    font-size: 28px;
+    justify-self: right;
+    margin-right: 10px;
+  }
+
+  .menuItems {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: 0;
+    padding: 10px;
+    background-color: #070707;
+    height: calc(100vh - 70px);
+  }
+
+  .navItem {
     width: 100%;
   }
-  .contact {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr;
-    grid-area: contact;
-    font-size: 20px;
-    place-items: center center;
+
+  .information a {
+    margin-bottom: 15px;
   }
 }
