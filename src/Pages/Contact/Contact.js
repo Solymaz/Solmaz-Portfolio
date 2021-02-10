@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
 import axios from "axios";
@@ -6,6 +6,7 @@ import { pageVariants, pageTransition } from "../../Style/Animations";
 import "./contact.css";
 
 const Contact = () => {
+  const [success, setSuccess] = useState();
   const {
     register,
     handleSubmit,
@@ -16,7 +17,7 @@ const Contact = () => {
   const onSubmit = ({ name, email, subject, message }) => {
     axios
       .post(
-        "https://europe-west3-fluted-bee-304317.cloudfunctions.net/send-contact-me-email",
+        "https://europe-west3-fluted-bee-304317.cloudfunctions.net/send-mail-yahoo",
         {
           to: email,
           name,
@@ -27,9 +28,11 @@ const Contact = () => {
       .then((response) => {
         console.log(response.data);
         console.log("Success!");
+        setSuccess(true);
         reset();
       })
       .catch((error) => {
+        setSuccess(false);
         console.log(error);
         console.log("Something went wrong");
       });
@@ -55,6 +58,8 @@ const Contact = () => {
         </p>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="form">
+        {success && <p style={{ color: "green" }}>Email sent</p>}
+        {success === false && <p style={{ color: "red" }}>An error occured</p>}
         <input
           type="text"
           name="name"

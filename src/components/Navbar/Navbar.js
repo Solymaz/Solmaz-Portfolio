@@ -1,5 +1,5 @@
-import React, { useState, useRef } from "react";
-import { NavLink } from "react-router-dom";
+import React, { useState, useRef, useEffect } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import { BiHomeHeart } from "react-icons/bi";
 import { BsPerson } from "react-icons/bs";
 import { GoSettings } from "react-icons/go";
@@ -13,6 +13,7 @@ import "./navbar.css";
 const Navbar = () => {
   const menuRef = useRef(null);
   const [menuShown, setMenuShown] = useState(false);
+  const location = useLocation();
 
   const showMenu = () => {
     if (menuRef.current.style.display === "grid") {
@@ -24,28 +25,23 @@ const Navbar = () => {
     }
   };
 
+  // Hide mobile navigation bar when changing page
+  useEffect(() => {
+    if (menuShown) {
+      setMenuShown(false);
+      menuRef.current.style.display = "none";
+    }
+  }, [location]);
+
   return (
     <nav className="navbar">
       <NavLink to="/" exact>
-        <img
-          src="logo.jpg"
-          className="logo"
-          alt="logo"
-          onClick={() => {
-            menuShown && showMenu();
-          }}
-        />
+        <img src="logo.jpg" className="logo" alt="logo" />
       </NavLink>
       <div className="menu" onClick={showMenu}>
         {menuShown ? <AiOutlineClose /> : <AiOutlineMenu />}
       </div>
-      <div
-        className="menuItems"
-        ref={menuRef}
-        onClick={() => {
-          menuShown && showMenu();
-        }}
-      >
+      <div className="menuItems" ref={menuRef}>
         <div className="information">
           <NavLink to="/" className="navItem" activeClassName="selected" exact>
             <BiHomeHeart />
