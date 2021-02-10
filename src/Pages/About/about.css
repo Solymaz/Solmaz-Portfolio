@@ -25,6 +25,17 @@
   grid-area: photo;
   display: grid;
 }
+.CV {
+  margin-top: 15px;
+  color: #da723c;
+}
+.CV a {
+  text-decoration: none;
+  color: #da723c;
+}
+.CV a:hover {
+  text-decoration: underline;
+}
 @media only screen and (max-width: 768px) {
   .about-content {
     display: grid;

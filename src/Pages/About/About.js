@@ -27,7 +27,16 @@ const About = () => {
         experience. Currently, I am actively looking for a new challenge. A
         chance to exercise and learn more by doing.
       </div>
-
+      <h3 className="CV">
+        Please find my resume{" "}
+        <a
+          href="https://www.linkedin.com/in/solmaz-seyedmousavi/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAABm7nGQBE-3zOXWOXIeZePRD1sZLYzg5K6k,1612996584823)/"
+          target="_blank"
+          rel="noreferrer"
+        >
+          Here
+        </a>
+      </h3>
       <img className="photo" src="./sol2.JPG" alt="Solmaz" />
     </motion.div>
   );
