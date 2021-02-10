@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { Switch, Route, useLocation } from "react-router-dom";
 import { AnimatePresence } from "framer-motion";
 import Navbar from "./components/Navbar/Navbar";
@@ -9,12 +9,20 @@ import Projects from "./Pages/Projects/Projects";
 import Contact from "./Pages/Contact/Contact";
 import "./App.css";
 
-function App() {
-  const location = useLocation();
-
+function calculateCorrectViewHeight() {
   // Set correct view height for mobile devices
   const vh = window.innerHeight * 0.01;
   document.documentElement.style.setProperty("--vh", `${vh}px`);
+}
+function App() {
+  const location = useLocation();
+
+  // Re calculate the view height when resizing the window
+  useEffect(() => {
+    window.addEventListener("resize", calculateCorrectViewHeight);
+    return () =>
+      window.removeEventListener("resize", calculateCorrectViewHeight);
+  }, []);
 
   return (
     <div className="App">

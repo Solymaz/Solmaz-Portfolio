@@ -32,3 +32,11 @@
 .ol {
   font-size: 170px;
 }
+@media only screen and (max-width: 480px) {
+  .home-content {
+    font-size: 28px;
+  }
+  .ol {
+    font-size: 100px;
+  }
+}
