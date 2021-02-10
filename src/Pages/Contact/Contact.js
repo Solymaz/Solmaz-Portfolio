@@ -56,9 +56,16 @@ const Contact = () => {
           other questions. Constructive feedback on my work is greatly
           appreciated.
         </p>
+        <div>
+          {success && (
+            <p style={{ color: "#da723c" }}>
+              Thank you for getting in touch with me🙏🏻 I'll get back to you soon
+              🙂
+            </p>
+          )}
+        </div>
       </div>
       <form onSubmit={handleSubmit(onSubmit)} className="form">
-        {success && <p style={{ color: "green" }}>Email sent</p>}
         {success === false && <p style={{ color: "red" }}>An error occured</p>}
         <input
           type="text"
