@@ -30,6 +30,15 @@
   align-items: center;
 }
 @media only screen and (max-width: 600px) {
+  .skills {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10% auto;
+    grid-template-areas:
+      "title"
+      "skills";
+    height: calc(100vh - 50px);
+  }
   .skillTable {
     grid-area: skills;
     display: grid;

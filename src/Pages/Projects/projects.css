@@ -26,7 +26,7 @@
 @media only screen and (max-width: 600px) {
   .projects {
     grid-template-columns: 1fr;
-    grid-template-rows: 15% auto auto auto;
+    grid-template-rows: auto auto auto auto;
     grid-template-areas:
       "title"
       "project1"
@@ -34,6 +34,7 @@
       "project3";
     row-gap: 20px;
     overflow: scroll;
+    justify-items: center;
   }
 }
 
