@@ -1,12 +1,9 @@
 import React from "react";
 import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-import sgMail from "@sendgrid/mail";
+import axios from "axios";
 import { pageVariants, pageTransition } from "../../Style/Animations";
 import "./contact.css";
-
-// initializing sendgrid
-sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
 const Contact = () => {
   const {
@@ -17,21 +14,24 @@ const Contact = () => {
   } = useForm({ mode: "onChange", reValidateMode: "onChange" });
 
   const onSubmit = ({ name, email, subject, message }) => {
-    const msg = {
-      to: email,
-      from: "contact@solmaz.dev",
-      subject,
-      text: `${name}: ${message}`,
-    };
-    console.log(msg);
-    sgMail
-      .send(msg)
-      .then(() => {
-        console.log("Email sent");
+    axios
+      .post(
+        "https://europe-west3-fluted-bee-304317.cloudfunctions.net/send-contact-me-email",
+        {
+          to: email,
+          name,
+          subject,
+          message,
+        }
+      )
+      .then((response) => {
+        console.log(response.data);
+        console.log("Success!");
         reset();
       })
       .catch((error) => {
-        console.error(error);
+        console.log(error);
+        console.log("Something went wrong");
       });
   };
 
