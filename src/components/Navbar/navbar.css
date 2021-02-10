@@ -135,7 +135,6 @@
     right: 0;
     padding: 10px;
     background-color: #070707;
-    height: calc(100vh - 70px);
   }
 
   .navItem {
