@@ -24,3 +24,21 @@
   margin: 0;
   grid-area: title;
 }
+.skill {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+@media only screen and (max-width: 600px) {
+  .skillTable {
+    grid-area: skills;
+    display: grid;
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-columns: 1fr 1fr;
+    font-size: 70px;
+    justify-items: center;
+  }
+  .skillTable div div {
+    justify-self: center;
+  }
+}

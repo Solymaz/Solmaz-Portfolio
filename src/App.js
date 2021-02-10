@@ -11,6 +11,11 @@ import "./App.css";
 
 function App() {
   const location = useLocation();
+
+  // Set correct view height for mobile devices
+  const vh = window.innerHeight * 0.01;
+  document.documentElement.style.setProperty("--vh", `${vh}px`);
+
   return (
     <div className="App">
       <Navbar />

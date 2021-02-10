@@ -36,7 +36,7 @@ const Skills = () => {
     >
       <h1>Skills</h1>
       <div className="skillTable">
-        <div>
+        <div className="skill">
           <motion.div
             animate={anime}
             transition={{ ...transition, delay: 0.5 }}
@@ -45,13 +45,13 @@ const Skills = () => {
           </motion.div>
           <div className="skillName ">HTML 5</div>
         </div>
-        <div>
+        <div className="skill">
           <motion.div animate={anime} transition={{ ...transition, delay: 1 }}>
             <DiCss3 />
           </motion.div>
           <div className="skillName">CSS 3</div>
         </div>
-        <div>
+        <div className="skill">
           <motion.div
             animate={anime}
             transition={{ ...transition, delay: 1.5 }}
@@ -60,13 +60,13 @@ const Skills = () => {
           </motion.div>
           <div className="skillName">JavaScript ES6</div>
         </div>
-        <div>
+        <div className="skill">
           <motion.div animate={anime} transition={{ ...transition, delay: 2 }}>
             <DiReact />
           </motion.div>
           <div className="skillName">ReactJS 16.8</div>
         </div>
-        <div>
+        <div className="skill">
           <motion.div
             animate={anime}
             transition={{ ...transition, delay: 2.5 }}
@@ -75,7 +75,7 @@ const Skills = () => {
           </motion.div>
           <div className="skillName">Bootstrap</div>
         </div>
-        <div>
+        <div className="skill">
           <motion.div animate={anime} transition={{ ...transition, delay: 3 }}>
             <AiOutlineGithub />
           </motion.div>
@@ -90,7 +90,7 @@ const Skills = () => {
           </motion.div>
           <div className="skillName">Redux</div>
         </div>
-        <div>
+        <div className="skill">
           <motion.div animate={anime} transition={{ ...transition, delay: 4 }}>
             <BsGrid1X2 />
           </motion.div>
