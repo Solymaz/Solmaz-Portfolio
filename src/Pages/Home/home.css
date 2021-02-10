@@ -32,7 +32,7 @@
 .ol {
   font-size: 170px;
 }
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 350px) {
   .home-content {
     font-size: 28px;
   }

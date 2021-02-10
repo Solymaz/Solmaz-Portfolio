@@ -136,6 +136,7 @@
     right: 0;
     padding: 10px;
     background-color: #070707;
+    align-self: center;
   }
 
   .navItem {
@@ -143,6 +144,6 @@
   }
 
   .information a {
-    margin-bottom: 15px;
+    margin-bottom: 40px;
   }
 }

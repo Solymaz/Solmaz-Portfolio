@@ -27,7 +27,14 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <NavLink to="/" exact>
-        <img src="logo.jpg" className="logo" alt="logo" />
+        <img
+          src="logo.jpg"
+          className="logo"
+          alt="logo"
+          onClick={() => {
+            menuShown && showMenu();
+          }}
+        />
       </NavLink>
       <div className="menu" onClick={showMenu}>
         {menuShown ? <AiOutlineClose /> : <AiOutlineMenu />}
