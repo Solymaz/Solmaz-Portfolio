@@ -31,6 +31,7 @@ const Navbar = () => {
       setMenuShown(false);
       menuRef.current.style.display = "none";
     }
+    // eslint-disable-next-line  react-hooks/exhaustive-deps
   }, [location]);
 
   return (
