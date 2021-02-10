@@ -16,3 +16,14 @@ body {
   margin-left: 50px;
   grid-area: content;
 }
+@media only screen and (max-width: 600px) {
+  .App {
+    display: grid;
+    height: 100vh;
+    grid-template-rows: 5% auto;
+    grid-template-columns: auto;
+    grid-template-areas:
+      "nav "
+      "content";
+  }
+}
