@@ -38,7 +38,7 @@ const About = () => {
           Here
         </a>
       </h3>
-      <img className="photo" src="./sol2.JPG" alt="Solmaz" />
+      <img className="photo" src="./sol.JPG" alt="Solmaz" />
     </motion.div>
   );
 };
