@@ -19,6 +19,7 @@
   grid-template-areas:
     "information"
     "contact";
+  height: calc(100vh - 70px);
 }
 
 .logo {
@@ -104,6 +105,14 @@
   display: none;
 }
 
+.topNav {
+  display: none;
+}
+
+.sidebarNav {
+  display: block;
+}
+
 @media only screen and (max-width: 768px) {
   .navbar {
     grid-area: nav;
@@ -145,5 +154,32 @@
 
   .information a {
     margin-bottom: 40px;
+  }
+
+  .topNav {
+    display: block;
+  }
+
+  .sidebarNav {
+    display: none;
+  }
+
+  .navItem:hover:nth-child(1):after {
+    content: "";
+  }
+
+  .navItem:hover:nth-child(2):after {
+    content: "";
+  }
+
+  .navItem:hover:nth-child(3):after {
+    content: "";
+  }
+
+  .navItem:hover:nth-child(4):after {
+    content: "";
+  }
+  .navItem:hover:nth-child(5):after {
+    content: "";
   }
 }
