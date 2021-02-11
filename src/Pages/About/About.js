@@ -30,9 +30,10 @@ const About = () => {
       <h3 className="CV">
         Please find my resume{" "}
         <a
-          href="https://www.linkedin.com/in/solmaz-seyedmousavi/detail/overlay-view/urn:li:fsd_profileTreasuryMedia:(ACoAABm7nGQBE-3zOXWOXIeZePRD1sZLYzg5K6k,1612996584823)/"
+          href="https://www.dropbox.com/s/4issgiop9gkjqgz/Sol%20CV.pdf?dl=0"
           target="_blank"
           rel="noreferrer"
+          alt="Solmaz Resume"
         >
           Here
         </a>
