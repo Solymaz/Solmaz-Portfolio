@@ -23,8 +23,7 @@ const About = () => {
         friends and colleagues, they would describe me as a fun person to be
         around, with endless positive energy. <br />
         When I am not coding, I am most probably dancing while cooking.
-        <br /> I have the heart and soul of a developer and all I lack is
-        experience. Currently, I am actively looking for a new challenge. A
+        <br /> Currently, I am looking for a new challenge. A
         chance to exercise and learn more by doing.
       </div>
       <h3 className="CV">
