@@ -15,18 +15,20 @@
   position: relative;
 }
 .reachMe {
-  text-align: right;
-  margin-right: 50px;
-}
-.reachMe a {
-  text-decoration: none;
-  color: #cdac81;
   font-size: 20px;
+  position: absolute;
+  right: 50px;
   font-weight: bold;
   transition: all 200ms ease-in;
+  font-family: "Merienda", cursive;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.reachMe a:hover {
-  font-size: 22px;
+
+.reachMe:hover {
+  background: #181818;
+  color: #efefef;
   filter: drop-shadow(0px 0px 6px white);
 }
 .ol {

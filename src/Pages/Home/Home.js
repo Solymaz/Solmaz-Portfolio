@@ -25,8 +25,10 @@ const Home = () => {
           <span className="ol">ol</span>
         </div>
         a curious Front-end Web Developer
-        <div className="reachMe">
-          <Link to="/contact">Reach out to me here</Link>
+        <div>
+          <Link to="/contact">
+            <button className="reachMe">Reach out to me</button>
+          </Link>
         </div>
       </div>
     </motion.div>
