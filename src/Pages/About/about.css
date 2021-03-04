@@ -26,16 +26,22 @@
   display: grid;
 }
 .CV {
-  margin-top: 15px;
-  color: #da723c;
+  font-size: 18px;
+  margin-left: 12px;
+  margin-top: 30px;
+  font-weight: bold;
+  transition: all 200ms ease-in;
+  font-family: "Merienda", cursive;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
-.CV a {
-  text-decoration: none;
-  color: #da723c;
+.CV:hover {
+  background: #181818;
+  color: #efefef;
+  filter: drop-shadow(0px 0px 6px white);
 }
-.CV a:hover {
-  text-decoration: underline;
-}
+
 @media only screen and (max-width: 768px) {
   .about-content {
     display: grid;

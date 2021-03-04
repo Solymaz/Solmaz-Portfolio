@@ -23,20 +23,18 @@ const About = () => {
         friends and colleagues, they would describe me as a fun person to be
         around, with endless positive energy. <br />
         When I am not coding, I am most probably dancing while cooking.
-        <br /> Currently, I am looking for a new challenge. A
-        chance to exercise and learn more by doing.
+        <br /> Currently, I am looking for a new challenge. A chance to exercise
+        and learn more by doing.
       </div>
-      <h3 className="CV">
-        Please find my resume{" "}
-        <a
-          href="https://www.dropbox.com/s/97xuzzmvnc4c3xx/Sol%20CV.pdf?dl=0"
-          target="_blank"
-          rel="noreferrer"
-          alt="Solmaz Resume"
-        >
-          Here
-        </a>
-      </h3>
+      <a
+        href="https://www.dropbox.com/s/97xuzzmvnc4c3xx/Sol%20CV.pdf?dl=0"
+        target="_blank"
+        rel="noreferrer"
+        alt="Solmaz Resume"
+        className="button hereButton"
+      >
+        <button className="CV"> Download my CV</button>
+      </a>
       <img className="photo" src="./sol.JPG" alt="Solmaz" />
     </motion.div>
   );
