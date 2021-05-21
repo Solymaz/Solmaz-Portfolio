@@ -27,7 +27,7 @@ const About = () => {
         and learn more by doing.
       </div>
       <a
-        href="https://www.dropbox.com/s/6zj8kklwywd1hvy/Solmaz%20Resume.pdf?dl=0"
+        href="https://www.dropbox.com/s/vywlfvcj7iytxr3/Solmaz%20S.Mousavi%20CV.pdf?dl=0"
         target="_blank"
         rel="noreferrer"
         alt="Solmaz Resume"
