@@ -1,10 +1,10 @@
 .projects {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-template-rows: 15% auto;
   grid-template-areas:
-    "title title title"
-    "project1 project2 project3 ";
+    "title title title ."
+    "project1 project2 project3 project4";
   height: calc(100vh - 50px);
   overflow: hidden;
   grid-column-gap: 20px;
@@ -17,7 +17,7 @@
     grid-template-areas:
       "title title"
       "project1 project2"
-      "project3 .";
+      "project3 project4";
     row-gap: 20px;
     overflow: scroll;
   }
@@ -31,7 +31,8 @@
       "title"
       "project1"
       "project2"
-      "project3";
+      "project3"
+      "project4";
     row-gap: 20px;
     overflow: scroll;
     justify-items: center;
@@ -106,9 +107,14 @@
   grid-area: project3;
 }
 
+.project4 {
+  grid-area: project4;
+}
+
 .project1 img,
 .project2 img,
-.project3 img {
+.project3 img,
+.project4 img {
   background-size: contain;
   background-repeat: no-repeat;
   width: 100%;
@@ -119,7 +125,8 @@
 
 .project1,
 .project2,
-.project3 {
+.project3,
+.project4 {
   position: relative;
   max-height: 462px;
   max-width: 226px;
@@ -129,19 +136,22 @@
 
 .project1:hover .overlay,
 .project2:hover .overlay,
-.project3:hover .overlay {
+.project3:hover .overlay,
+.project4:hover .overlay {
   display: none;
 }
 
 .project1:hover .project-text,
 .project2:hover .project-text,
-.project3:hover .project-text {
+.project3:hover .project-text,
+.project4:hover .project-text {
   opacity: 0;
   cursor: default;
 }
 
 .project1:hover .view,
 .project2:hover .view,
-.project3:hover .view {
+.project3:hover .view,
+.project4:hover .view {
   opacity: 1;
 }

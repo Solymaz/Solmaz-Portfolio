@@ -77,6 +77,28 @@ const projects = () => {
           />
         </div>
       </div>
+      <div className="project4">
+        <div className="project-info">
+          <div className="project-text">
+            React JS <div>Dictionary App</div>
+          </div>
+          <a
+            href="https://tender-fermi-8f29be.netlify.app/"
+            className="view"
+            target="_blank"
+            rel="noreferrer"
+          >
+            View Project
+          </a>
+        </div>
+        <div className="overlay" />
+        <div className="image-container">
+          <img
+            alt=" ReactJS dictionary app screenshot"
+            src="./reactDictionaryApp.png"
+          />
+        </div>
+      </div>
     </motion.div>
   );
 };
