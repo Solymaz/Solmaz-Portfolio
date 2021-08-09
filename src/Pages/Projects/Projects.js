@@ -14,7 +14,7 @@ const projects = () => {
       className="projects"
     >
       <h1 className="title">Featured Projects</h1>
-      <div className=" project1">
+      <div className="project1">
         <div className="project-info">
           <div className="project-text">
             Vanilla JS <div> Weather App 🌦</div>
@@ -30,13 +30,10 @@ const projects = () => {
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img
-            alt="Vanilla JS weather app screenshot"
-            src="./vanillaProject.PNG"
-          />
+          <img alt="weather app screenshot" src="./vanillaProject.PNG" />
         </div>
       </div>
-      <div className=" project2">
+      <div className="project2">
         <div className="project-info">
           <div className="project-text">
             React JS <div>Todo List App 📝</div>
@@ -52,10 +49,10 @@ const projects = () => {
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img alt=" ReactJS todo app screenshot" src="./toDoApp.PNG" />
+          <img alt="todo app screenshot" src="./toDoApp.PNG" />
         </div>
       </div>
-      <div className=" project3">
+      <div className="project3">
         <div className="project-info">
           <div className="project-text">
             React JS <div>Weather App 🌈</div>
@@ -71,10 +68,7 @@ const projects = () => {
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img
-            alt=" ReactJS weather app screenshot"
-            src="./reactWeatherApp.PNG"
-          />
+          <img alt="weather app screenshot" src="./reactWeatherApp.PNG" />
         </div>
       </div>
       <div className="project4">
@@ -93,10 +87,7 @@ const projects = () => {
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img
-            alt=" ReactJS dictionary app screenshot"
-            src="./reactDictionaryApp.png"
-          />
+          <img alt="dictionary app screenshot" src="./reactDictionaryApp.png" />
         </div>
       </div>
       <div className="project5">
@@ -115,10 +106,7 @@ const projects = () => {
         </div>
         <div className="overlay" />
         <div className="image-container">
-          <img
-            alt=" ReactJS dictionary app screenshot"
-            src="./movieBrowser.png"
-          />
+          <img alt="movie browser screenshot" src="./movieBrowser.jpg" />
         </div>
       </div>
     </motion.div>
