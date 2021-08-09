@@ -17,7 +17,7 @@ function calculateCorrectViewHeight() {
 function App() {
   const location = useLocation();
 
-  // Re calculate the view height when resizing the window
+  // Recalculate the view height when resizing the window
   useEffect(() => {
     window.addEventListener("resize", calculateCorrectViewHeight);
     return () =>
