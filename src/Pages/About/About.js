@@ -23,10 +23,9 @@ const About = () => {
         friends and colleagues, they would describe me as a fun person to be
         around, with endless positive energy. <br />
         When I am not coding, I am most probably dancing while cooking.
-        <br /> Currently, I am looking for a new challenge. A chance to exercise
-        and learn more by doing.
+        <br /> I am always looking for a new challenge. 
       </div>
-      <a
+      {/* <a
         href="https://www.dropbox.com/s/vywlfvcj7iytxr3/Solmaz%20S.Mousavi%20CV.pdf?dl=0"
         target="_blank"
         rel="noreferrer"
@@ -34,7 +33,7 @@ const About = () => {
         className="button hereButton"
       >
         <button className="CV"> Download my CV</button>
-      </a>
+      </a> */}
       <img className="photo" src="./sol.JPG" alt="Solmaz" />
     </motion.div>
   );
