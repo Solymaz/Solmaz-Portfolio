@@ -50,11 +50,12 @@ const Contact = () => {
       <div className="contactMe-content">
         <h1>Reach out to me</h1>
         <p>
-          As a junior frontend developer I am interested in opportunities that
-          provides me with the chance of learning modern frontend development by
-          doing. However, please do not hesitate to hit me up if you have any
-          other questions. Constructive feedback on my work is greatly
-          appreciated.
+          I am interested in opportunities that provides me with The opportunity
+          to work with cutting-edge technologies like React, TypeScript, and
+          React Native, to stay at the forefront of industry trends and
+          innovations. Please do not hesitate to hit me up if you have a
+          collaboration offer or any other questions. Constructive feedback on
+          my work is greatly appreciated.
         </p>
         <div>
           {success && (
