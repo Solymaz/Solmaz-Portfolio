@@ -2,7 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { pageVariants, pageTransition } from "../../Style/Animations";
 import { AiOutlineGithub } from "react-icons/ai";
-import { BsGrid1X2 } from "react-icons/bs";
 import {
   DiCss3,
   DiReact,
