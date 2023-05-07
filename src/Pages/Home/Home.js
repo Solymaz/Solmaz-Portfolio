@@ -24,7 +24,7 @@ const Home = () => {
           <img src="name.jpg" className="name" alt="logo" />
           <span className="ol">ol</span>
         </div>
-        a curious Front-end Web Developer
+        a curious Front-end Developer
         <div>
           <Link to="/contact">
             <button className="reachMe">Reach out to me</button>
